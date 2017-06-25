@@ -12,6 +12,8 @@
 		FC1216601EF574E600EAA28E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC12165E1EF574E600EAA28E /* Main.storyboard */; };
 		FC1216621EF574E600EAA28E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC1216611EF574E600EAA28E /* Assets.xcassets */; };
 		FC1216651EF574E600EAA28E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC1216631EF574E600EAA28E /* LaunchScreen.storyboard */; };
+		FC12166E1EF5753200EAA28E /* kirk.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC12166C1EF5753200EAA28E /* kirk.jpg */; };
+		FC12166F1EF5753200EAA28E /* james.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FC12166D1EF5753200EAA28E /* james.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		FC1216611EF574E600EAA28E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC1216641EF574E600EAA28E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FC1216661EF574E600EAA28E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC12166C1EF5753200EAA28E /* kirk.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = kirk.jpg; path = ../../../Downloads/Images/kirk.jpg; sourceTree = "<group>"; };
+		FC12166D1EF5753200EAA28E /* james.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = james.jpg; path = ../../../Downloads/Images/james.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +58,8 @@
 		FC1216591EF574E600EAA28E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				FC12166D1EF5753200EAA28E /* james.jpg */,
+				FC12166C1EF5753200EAA28E /* kirk.jpg */,
 				FC12165A1EF574E600EAA28E /* AppDelegate.swift */,
 				FC12165C1EF574E600EAA28E /* ViewController.swift */,
 				FC12165E1EF574E600EAA28E /* Main.storyboard */,
@@ -122,8 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC12166E1EF5753200EAA28E /* kirk.jpg in Resources */,
 				FC1216651EF574E600EAA28E /* LaunchScreen.storyboard in Resources */,
 				FC1216621EF574E600EAA28E /* Assets.xcassets in Resources */,
+				FC12166F1EF5753200EAA28E /* james.jpg in Resources */,
 				FC1216601EF574E600EAA28E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

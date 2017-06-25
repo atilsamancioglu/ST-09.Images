@@ -1,26 +1,59 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F2104" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Images" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="james.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-py-AmK">
+                                <rect key="frame" x="44" y="53" width="286" height="346"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="142-kZ-lL3">
+                                <rect key="frame" x="149" y="440" width="76" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="NKn-HV-OP8"/>
+                                    <constraint firstAttribute="height" constant="36" id="ymf-X6-Dws"/>
+                                </constraints>
+                                <state key="normal" title="Change"/>
+                                <connections>
+                                    <action selector="changeClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Itc-Fk-Oog"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6fX-py-AmK" firstAttribute="centerX" secondItem="5CO-uI-y7b" secondAttribute="centerX" id="6Ly-hM-PI1"/>
+                            <constraint firstItem="6fX-py-AmK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="AN7-7Y-vrq"/>
+                            <constraint firstItem="6fX-py-AmK" firstAttribute="top" secondItem="5CO-uI-y7b" secondAttribute="top" constant="33" id="adC-xo-rtS"/>
+                            <constraint firstItem="6fX-py-AmK" firstAttribute="centerX" secondItem="142-kZ-lL3" secondAttribute="centerX" id="ftp-ae-2nu"/>
+                            <constraint firstItem="5CO-uI-y7b" firstAttribute="bottom" secondItem="142-kZ-lL3" secondAttribute="bottom" constant="191" id="hVU-wo-BNz"/>
+                            <constraint firstItem="142-kZ-lL3" firstAttribute="top" secondItem="6fX-py-AmK" secondAttribute="bottom" constant="41" id="nTl-uz-ZQ6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5CO-uI-y7b"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="6fX-py-AmK" id="idI-w0-SOU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="116" y="110"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="james.jpg" width="369" height="451"/>
+    </resources>
 </document>
